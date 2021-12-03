@@ -1,0 +1,19 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>@($"Running .NET {Environment.Version} on Cloud Services.") </p>
+    <h2>Some information:</h2>
+    <p>
+        @($"Environment.MachineName: {Environment.MachineName}")<br />
+        @($"Environment.OSVersion: {Environment.OSVersion}")<br />
+        @($"Environment.ProcessorCount: {Environment.ProcessorCount}")<br />
+        @($"Environment.ProcessId: {Environment.ProcessId}")<br />
+        @($"Environment.ProcessPath: {Environment.ProcessPath}")<br />
+    </p>
+</div>
